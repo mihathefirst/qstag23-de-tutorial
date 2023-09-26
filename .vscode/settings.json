@@ -1,5 +1,5 @@
 {
-    "python.defaultInterpreterPath": "/home/gitpod/.pyenv/shims/python",
+    // "python.defaultInterpreterPath": "/home/gitpod/.pyenv/shims/python",
     "python.terminal.activateEnvironment": false,
     "gitpod.experimental.portsView.enabled": false,
     "files.autoSave": "onFocusChange",
@@ -8,9 +8,9 @@
     "git.autofetchPeriod": 10,
     // "robotcode.robot.languages": ["de"],
     "robotcode.robot.pythonPath": [
-        "./lib",
-        "./resources",
-        "./Tutorial/Resources"
+        "./",
+        "./live",
+        "./live.Examples.Example2"
     ],
     "robotcode.robot.args": [
         "--loglevel",
@@ -19,6 +19,7 @@
     ],
     "robotcode.debug.outputMessages": false,
     "robotcode.debug.groupOutput": false,
+    "robotcode.debug.attachPython": true,
     "robotcode.robocop.enabled": false,
     "redhat.telemetry.enabled": false,
     "workbench.colorTheme": "Default Dark+",
@@ -29,25 +30,27 @@
     "githubPullRequests.createOnPublishBranch": "never",
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
-    "files.exclude": {
+    "files.excludeX": {
         "**/.*": true,
         "LICENSE": true,
         "requirements.txt": true,
         "README.md": true,
-		"**/live/*.*": true, 
-		"**/live/Examples/CustomCode": true, 
-		"**/live/Examples/Example_50": true, 
-		"**/live/Examples/Example1": true, 
-		"**/live/Examples/ExampleBDD": true, 
-		"**/live/Examples/ExampleEntry": true, 
-		"**/live/Examples/ExampleJS": true, 
-		"**/live/Examples/ExampleXML": true, 
-		"**/live/Examples/FOR_Loops": true, 
-		"**/live/Examples/IF_Statement": true, 
-		"**/live/Examples/Variables": true, 
+		"**/live/*.*": true,
+		"**/live/Examples/CustomCode": true,
+		"**/live/Examples/Example_50": true,
+		"**/live/Examples/Example1": true,
+		"**/live/Examples/ExampleBDD": true,
+		"**/live/Examples/ExampleEntry": true,
+		"**/live/Examples/ExampleJS": true,
+		"**/live/Examples/ExampleXML": true,
+		"**/live/Examples/FOR_Loops": true,
+		"**/live/Examples/IF_Statement": true,
+		"**/live/Examples/Variables": true,
 		"**/live/Examples/index.json": true,
-		"**/live/Examples/Example2/test.robot": true,
-		"**/live/Examples/Example2/config.json": true
+		"**/live/Examples/Example2/test.robotx": true,
+		"**/live/Examples/Example2/test.pyx": true,
+		"**/live/Examples/Example2/config.json": true,
+		"**/crypto_keys": true
     },
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorCustomizations": {
@@ -140,4 +143,8 @@
             }
         ]
     },
+    "python.autoComplete.extraPaths": [
+
+    ],
+    "python.analysis.extraPaths": [],
 }
