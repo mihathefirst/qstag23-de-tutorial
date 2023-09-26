@@ -1,7 +1,5 @@
 *** Settings ***
-Documentation     A test suite for valid login.
-...
-...               Keywords are imported from the resource file
+Documentation     This suite demonstrates various sections available in robot files.
 Resource          ../../../live/Examples/Example2/keywords.resource
 Suite Setup       Connect to Server
 Test Teardown     Logout User
@@ -24,5 +22,11 @@ Create User With Admin Rights
     ...    password=${User Password}
     ...    right=user
     Verify User Details    ${User Login}    ${User Name}
+    Change Login    ${User Login}    ${User Password}
+
+
+*** Keywords ***
+Change Login
+    [Arguments]    ${User Login}    ${User Password}
     Logout User
     Login User    ${User Login}    ${User Password}

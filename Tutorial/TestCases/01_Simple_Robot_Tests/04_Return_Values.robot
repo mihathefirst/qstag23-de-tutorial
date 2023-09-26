@@ -1,17 +1,18 @@
 *** Settings ***
-Library    String
-
+Documentation     A test suite for valid login.
+...
+...               Keywords are imported from the resource file
+Resource          ../../../live/Examples/Example2/keywords.resource
+Suite Setup       Connect to Server
+Test Teardown     Logout User
+Suite Teardown    Disconnect
 
 *** Test Cases ***
-Tests with Time
-    ${time}=    Get Time
-    Log To Console    Hello, Folks!
-    Log To Console    It is ${time}.
 
-Test a Text Contains
-    Log To Console     one,two,three
-    ${list}    Split String    one,two,three    ,
-    Log Many    @{list}
-    Log To Console    ${list}[0]
-    Log To Console    ${list}[1]
-    Log To Console    ${list}[2]
+Access Own Details With User Rights
+    [Documentation]    Tests if a user can access own details
+    Login User    ironman    1234567890
+    &{user_details} =    Get User Details By Name    ironman
+    Should Be Equal    ${user_details}[login]    ironman
+    Should Be Equal    ${user_details}[name]     Tony Stark
+    Should Be Equal    ${user_details}[right]    user

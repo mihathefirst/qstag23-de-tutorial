@@ -31,11 +31,23 @@
     "git.confirmSync": false,
     "files.exclude": {
         "**/.*": true,
-        "**/.vscode": true,
         "LICENSE": true,
         "requirements.txt": true,
         "README.md": true,
-        "**/crypto_keys": true
+		"**/live/*.*": true, 
+		"**/live/Examples/CustomCode": true, 
+		"**/live/Examples/Example_50": true, 
+		"**/live/Examples/Example1": true, 
+		"**/live/Examples/ExampleBDD": true, 
+		"**/live/Examples/ExampleEntry": true, 
+		"**/live/Examples/ExampleJS": true, 
+		"**/live/Examples/ExampleXML": true, 
+		"**/live/Examples/FOR_Loops": true, 
+		"**/live/Examples/IF_Statement": true, 
+		"**/live/Examples/Variables": true, 
+		"**/live/Examples/index.json": true,
+		"**/live/Examples/Example2/test.robot": true,
+		"**/live/Examples/Example2/config.json": true
     },
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorCustomizations": {
