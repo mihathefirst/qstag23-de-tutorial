@@ -30,7 +30,7 @@
     "githubPullRequests.createOnPublishBranch": "never",
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
-    "files.excludeX": {
+    "files.exclude": {
         "**/.*": true,
         "LICENSE": true,
         "requirements.txt": true,
