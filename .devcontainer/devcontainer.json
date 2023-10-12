@@ -1,6 +1,6 @@
 {
   "name": "QS Tag 2023",
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "image": "mcr.microsoft.com/devcontainers/python:0-3.11-bullseye",
   "features": {
     "desktop-lite": {
       "webPort": "6080",
