@@ -2,8 +2,6 @@
 tasks:
   - name: install System
     init: |
-      pyenv install 3.11.6
-      pyenv global 3.11.6
       python -m pip install --upgrade pip
       pip install -r requirements.txt
 image: gitpod/workspace-full-vnc
