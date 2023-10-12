@@ -1,3 +1,4 @@
+robotframework
 robotframework-robocop
 robotframework-tidy
 robotframework-datadriver
