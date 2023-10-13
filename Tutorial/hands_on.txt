@@ -1,0 +1,20 @@
+Hands-on 1: New Admin
+---------------------
+1. Log in as admin
+2. Create a new user with admin rights
+3. Log out
+4. Log in as new user
+5. Validate admin rights
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Hands-on 2: Change ALL Passwords (except mine)
+----------------------------------------------
+1. Log in as admin
+2. Change passwords of all users (except user "admin")
+3. Check if password change was successful
+
+NOTES:
+- This test may require new keywords on business layer.
+- CustomLibrary.py provides methods get_all_users() and change_users_password()
+- change_users_password() fails for executing user
