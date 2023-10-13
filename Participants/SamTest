@@ -1,0 +1,12 @@
+***Settings***
+Resource    ../live/Examples/Examples2/keywords.resource
+
+Suite Setup       Connect to server
+Test Teardown     Logout User
+Suite Teardown    Disconnect
+
+***Test Cases***
+First Test
+Log    Qs-Tag 2023
+Login Admin
+Print All Users
